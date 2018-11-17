@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     RxValidator.createFor(birthday)
-        .age("You have to be 18y old", 18, sdf)
+        .age("You have to be 18y old", 1, sdf)
         .onValueChanged()
         .toObservable()
         .observeOn(AndroidSchedulers.mainThread())
